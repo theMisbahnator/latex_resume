@@ -1,0 +1,408 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans} % same as roboto, but this one is 
+better imo
+% \usepackage[sfdefault]{roboto} % maybe, kinda small and nerdy looking
+% \usepackage[sfdefault]{noto-sans} % nope, to blocky
+% \usepackage[default]{sourcesanspro} % one of the best
+
+% serif
+% \usepackage{CormorantGaramond} % nope
+% \usepackage{charter} % maybe, kinda hard to read
+% \usepackage[default]{charter}
+%cool fonts
+% \usepackage[default]{comicneue}
+% \usepackage[T1]{fontenc}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[default]{gillius}
+
+% \usepackage[light,math]{iwona}
+% \usepackage[T1]{fontenc}
+
+% \usepackage[sfdefault]{overlock} %% Option 'sfdefault' only if the base 
+font of the document is to be sans serif
+% \usepackage[T1]{fontenc}
+
+% \usepackage[sfdefault]{quattrocento}
+% \usepackage[T1]{fontenc}
+
+% \usepackage[sfdefault, condensed]{roboto}  %% Option 'sfdefault' only if 
+the base font of the document is to be sans serif
+% \usepackage[T1]{fontenc}
+
+% \usepackage{paratype}
+% \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the 
+document is to be sans serif
+% \usepackage[T1]{fontenc}
+
+% \usepackage[T1]{fontenc}
+% \usepackage{stix}
+
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold 
+face
+%% The 'sfdefault' option to make the base font sans serif
+\renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
+
+% \usepackage[sfdefault,lf]{carlito}
+% % The 'lf' option for lining figures
+% % The 'sfdefault' option to make the base font sans serif
+% \usepackage[T1]{fontenc}
+% \renewcommand*\oldstylenums[1]{\carlitoOsF #1}
+
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemSection}[1]{
+  \item[]\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small#1} & {\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.00in, 
+label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email 
+: \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile 
+: +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Misbah Imtiaz} \\ \vspace{1pt}
+    \small 940-999-4212 $|$ 
+\href{mailto:misb2001@gmail.com}{\underline{misb2001@gmail.com}} $|$ 
+    
+\href{https://linkedin.com/in/misbah-imtiaz}{\underline{linkedin.com/in/misbah-imtiaz}} 
+$|$
+    
+\href{https://github.com/theMisbahnator}{\underline{github.com/theMisbahnator}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {{University of Texas at Austin}}{Aug 2020 -- Dec 2023}
+      {Bachelor of Science in Computer Science}{\textbf{Cumulative GPA:} 
+3.93}
+      \resumeItemListStart[leftmargin=0.00in, label={}]
+        \resumeItem{\textbf{Coursework:} Data Structures, Discrete Math, 
+Computer Architecture, Operating Systems, Algorithms, Compilers, Machine 
+Learning, Mobile Development, Competitive Programming, Ethics in CS, Intro 
+to Programming in Java and C++}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  
+% \section{Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {University of Texas at Austin}{Aug 2020 -- Dec 2023}
+%       {Bachelor of Science in Computer Science}{}
+%       \resumeItemListStart[leftmargin=0.15in]
+%         \resumeItem{\textbf{Grade Point Average (GPA):} 3.91}
+%         \resumeItem{\textbf{Coursework:} Data Structures, Discrete Math, 
+Computer Architecture, Operating Systems, Compilers, Competitive 
+Programming, Intro to Programming in Java and C++}
+%       \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+  
+  
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      
+% -----------Multiple Positions Heading-----------
+   % \resumeSubSubheading
+   %  {Software Engineer I}{Oct 2014 - Sep 2016}
+   %  \resumeItemListStart
+   %     \resumeItem{Apache Beam}
+   %       {Apache Beam is a unified model for defining both batch and 
+streaming data-parallel processing pipelines}
+   %  \resumeItemListEnd
+   % \resumeSubHeadingListEnd
+% -------------------------------------------
+
+\resumeProjectHeading
+          {\textbf{\normalsize IBM} $|$ {Backend Engineering Co-op}}{Aug 
+2022 -- Dec 2022}
+          \resumeItemListStart
+        %   
+\setlength{\itemindent}{-0.33in}\item[]\small\setlength{\vspace}{2}{Spectrum 
+Fusion}
+        %   \setlength{\itemindent}{0.00in}
+            \resumeItem{Developed on the IBM Spectrum Fusion team building 
+storage infrastructure for containerized applications on Red Hat 
+OpenShift}
+            \resumeItem{Maintained the API layer in \textbf{Golang} with 
+\textbf{Swagger API} handling incoming defects on a ticket based 
+development system}
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{\normalsize Paycom} $|$ {Software Development 
+Intern}}{May 2022 -- Aug 2022}
+          \resumeItemListStart
+             
+\setlength{\itemindent}{-0.33in}\item[]\small\setlength{\vspace}{2}{RealTimeNotify}
+          \setlength{\itemindent}{0.00in}
+            \resumeItem{Launched real time notification service in 
+\textbf{Node} and \textbf{Express} for
+            monitoring \textbf{10,000+} daily payroll transactions}
+            \resumeItem{Architected \textbf{REST API} using websockets to 
+eliminate database polling to \textbf{MySQL server} reducing data 
+bandwidth usage by \textbf{$\sim$85\%}}
+            \resumeItem{Tested application endpoints using 
+\textbf{Postman} and presented demo to the CIO and \textbf{120+} 
+developers}
+             
+\setlength{\itemindent}{-0.33in}\item[]\small\setlength{\vspace}{2}{Codeathon}
+          \setlength{\itemindent}{0.00in}
+          \resumeItem{Designed a time tracking and reporting tool using 
+\textbf{React} styled with \textbf{Bootstrap} for organizing a team's 
+Agile sprints in JIRA}
+            \resumeItem{Handled task logging and creation with CRUD 
+operations in \textbf{C\#} and \textbf{MySQL} placing \textbf{2nd} at 
+company hackathon}
+          \resumeItemListEnd
+          
+          % \resumeProjectHeading
+          % {\textbf{\medium theCoderSchool} $|$ {Code Coach}}{Feb 2020 -- 
+May 2020}
+          % \resumeItemListStart
+          %   \resumeItem{Instilled methodical thinking ability into 
+\textbf{four students} through project based learning}
+          %   \resumeItem{Tailored curriculum's ranging from 
+\textbf{Scratch, Java,} and \textbf{Math} concepts around a student's 
+interests}
+          % \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+\small Languages\ & \small{Java} $|$ Python $|$ C/C++ $|$ Golang $|$ 
+JavaScript $|$ SQL $|$ HTML/CSS \\
+\small Frameworks/Libraries\ & \small{Flask} $|$ React $|$ Node $|$ 
+Express $|$ OpenCV $|$ Numpy $|$ Selenium $|$ JavaFX\\
+\small Developer Tools\ & \small{Git} $|$ AWS $|$ Docker $|$ PostgreSQL 
+$|$ MySQL $|$ Postman  $|$ Heroku $|$ QEMU \\
+\end{tabular}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+          
+    
+    % \resumeProjectHeading
+    %       {\textbf{Freeatery} $|$ 
+\href{https://github.com/anderdc/solidity}{\footnotesize\underline{Mobile 
+Application}}}{Jun 2022}
+    %       \resumeItemListStart
+    %         \resumeItem{Collaborated with \textbf{five developers} in 
+launching a \textbf{React Native} mobile app to publicize free food events 
+on campus}
+    %         \resumeItem{Handled event broadcasting and account 
+management using CRUD operations in \textbf{Golang} on data stored in 
+\textbf{Redux} and \textbf{MongoDB}}
+    %       \resumeItemListEnd 
+          
+      \resumeProjectHeading
+          {\textbf{John Cena!} $|$ 
+\href{https://github.com/theMisbahnator/facial_recognition}{\footnotesize\underline{Website 
+ML Application}}}{Aug 2022}
+          \resumeItemListStart
+            \resumeItem{Adapted pre-trained facial recognition model in 
+\textbf{OpenCV} to play a theme song when a person enters a room}
+            \resumeItem{Built \textbf{React} and \textbf{Flask} website to 
+change user songs and headshots saved using \textbf{PostgreSQL} and 
+\textbf{AWS S3}}
+            % \resumeItem{Deployed script on \textbf{Raspberry Pi} using 
+\textbf{Docker} to allow live facial recognition}
+          \resumeItemListEnd
+       
+        % \resumeProjectHeading
+        %   {\textbf{Freeatery} $|$ 
+\href{https://github.com/anderdc/solidity}{\footnotesize\underline{Mobile 
+Application}}}{Jun 2022}
+        %   \resumeItemListStart
+        %     \resumeItem{Launched a \textbf{React Native} mobile app to 
+train grocery codes to incoming cashiers}
+        %     \resumeItem{Handled event broadcasting and account 
+management using CRUD operations in \textbf{Golang} on data stored in 
+\textbf{Redux} and \textbf{MongoDB}}
+        %   \resumeItemListEnd 
+       
+          
+      \resumeProjectHeading
+          {\textbf{File Storage} $|$ {\footnotesize{Low-Level 
+Design}}}{Apr 2022}
+          \resumeItemListStart
+            \resumeItem{Designed EXT2 file system for the Linux kernel in 
+\textbf{C++} and \textbf{x86-32 Assembly} for the storage and retrieval of 
+data}
+            \resumeItem{Implemented memory caching with a least frequently 
+used eviction policy reducing disk read times by \textbf{83\%}}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Life on Mars} $|$ 
+          
+\href{https://github.com/theMisbahnator/Life-on-Mars}{\footnotesize\underline{Discord 
+Bot}}}{Jul 2021}
+          \resumeItemListStart
+            \resumeItem{Created Discord bot in \textbf{Python} to provide 
+daily insight on the life on Mars hosted with \textbf{Heroku}}
+            \resumeItem{Extracted \textbf{100+} articles and terrain 
+photos using \textbf{Selenium} and \textbf{NASA API} displaying results 
+based on rover and capture date}
+          \resumeItemListEnd
+          
+          
+          \resumeProjectHeading
+          {\textbf{Cubic Connections} $|$ 
+\href{https://github.com/theMisbahnator/connect4-3d}{\footnotesize\underline{Desktop 
+Game}}}{May 2021}
+          \resumeItemListStart
+            \resumeItem{Built connect four game in multi-dimensional space 
+with \textbf{3-D graphics} visualized using \textbf{JavaFX}}
+            \resumeItem{Crafted traversal algorithm using \textbf{DFS} and 
+\textbf{memoization} for detecting a winner in linear time tested with 
+\textbf{JUnit 5}}
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+ 
+ % -----------Awards-----------
+\section{Competitions}
+ \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Capture the Flag} $|$ {Information and Systems Security 
+Society}}{Aug 2020 -- Jan 2021}
+          \resumeItemListStart
+            \resumeItem{Employed terminal commands and web exploits to 
+uncover flags}
+            \resumeItem{Achieved 1st RobopocalypseCTF, 2nd StonksCTF, 2nd 
+SpookyCTF, 4th SecurityCTF}
+          \resumeItemListEnd
+          
+          \resumeProjectHeading
+          {\textbf{Policy Debate} $|$ {State and National Debate}}{Mar 
+2019 -- Jun 2020}
+          \resumeItemListStart
+            \resumeItem{Formulated and defended legislative solutions 
+towards complex domestic/international affairs}
+            \resumeItem{Placed 3rd out of 64 teams at the 6A UIL Texas 
+State Tournament}
+            \resumeItem{Ranked 14th out of 190 teams at the National 
+Speech and Debate Tournament}
+          \resumeItemListEnd
+          
+          \resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
+
